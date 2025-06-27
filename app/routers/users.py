@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from fastapi.security import OAuth2PasswordRequestForm
-from .. import schemas, crud, auth
-from ..database import SessionLocal
+from fastapi_ecommerce import schemas, crud, auth
+from fastapi_ecommerce.database import SessionLocal
 
 router = APIRouter(prefix="/users", tags=["Users"])
 
