@@ -36,7 +36,6 @@ class CartItem(Base):
 
 
 
-# Product, User, CartItem already here...
 
 class Order(Base):
     __tablename__ = "orders"

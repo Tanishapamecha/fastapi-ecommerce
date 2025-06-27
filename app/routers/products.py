@@ -19,7 +19,7 @@ def get_db():
 def create_product(
     product: schemas.ProductCreate,
     db: Session = Depends(get_db),
-    current_user: User = Depends(get_current_user)  # 👈 only logged-in users
+    current_user: User = Depends(get_current_user)  
 ):
     return crud.create_product(db=db, product=product)
 

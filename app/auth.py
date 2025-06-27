@@ -29,7 +29,6 @@ def create_access_token(data: dict, expires_delta: timedelta = None):
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/users/login")
 
-# Existing functions here...
 
 def get_db():
     db = SessionLocal()
