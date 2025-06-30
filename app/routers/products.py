@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
-from fastapi_ecommerce import schemas, crud
-from fastapi_ecommerce.database import SessionLocal
-from fastapi_ecommerce.auth import get_current_user
-from fastapi_ecommerce.models import User
+from .. import schemas, crud
+from ..database import SessionLocal
+from ..auth import get_current_user
+from ..models import User
 
 router = APIRouter(prefix="/products", tags=["Products"])
 
